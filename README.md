@@ -1,2 +1,43 @@
-# E-Hadir
-E-Hadir is a Student Event &amp; Workshop Ticketing System developed for the CSC584 System Development Project. The web application allows students to discover university events, register for events and manage their registrations while committee members manage events and attendance. Administrators oversee event records and monitor system analytics.
+E-Hadir: Student Event & Workshop Ticketing
+
+Storyboard Overview
+
+The E-Hadir storyboard illustrates the proposed website interface, page structure and navigation flow. It shows how different users interact with the system, from accessing their accounts to managing events and registrations.
+
+Website Flow
+
+1. Student Flow
+
+Login
+
+Student Registration
+
+Student Dashboard
+
+View Event Details
+
+Register for Events
+
+View Registration Status
+
+Access Digital Ticket
+
+Manage My Registrations
+
+2. Committee Flow
+
+Login
+
+Committee Events
+
+Create and Manage Events
+
+Manage Student Attendance
+
+3. Admin Flow
+
+Login
+
+Admin Events Management
+
+View Analytics Dashboard
