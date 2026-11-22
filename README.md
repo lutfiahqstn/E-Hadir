@@ -4,25 +4,25 @@ Storyboard Overview
 
 The E-Hadir storyboard illustrates the proposed website interface, page structure and navigation flow. It shows how different users interact with the system from accessing their accounts to managing events and registrations.
 
-Website Flow
+**Website Flow**
 
 1. Student Flow
 
-Login
+-Login
 
-Student Registration
+-Student Registration
 
-Student Dashboard
+-Student Dashboard
 
-View Event Details
+-View Event Details
 
-Register for Events
+-Register for Events
 
-View Registration Status
+-View Registration Status
 
-Access Digital Ticket
+-Access Digital Ticket
 
-Manage My Registrations
+-Manage My Registrations
 
 2. Committee Flow
 
