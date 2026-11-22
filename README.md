@@ -1,8 +1,8 @@
-E-Hadir: Student Event & Workshop Ticketing
+# E-Hadir: Student Event & Workshop Ticketing
 
 Storyboard Overview
 
-The E-Hadir storyboard illustrates the proposed website interface, page structure and navigation flow. It shows how different users interact with the system, from accessing their accounts to managing events and registrations.
+The E-Hadir storyboard illustrates the proposed website interface, page structure and navigation flow. It shows how different users interact with the system from accessing their accounts to managing events and registrations.
 
 Website Flow
 
