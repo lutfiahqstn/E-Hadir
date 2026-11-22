@@ -8,21 +8,21 @@ The E-Hadir storyboard illustrates the proposed website interface, page structur
 
 1. Student Flow
 
--Login
+- Login
 
--Student Registration
+- Student Registration
 
--Student Dashboard
+- Student Dashboard
 
--View Event Details
+- View Event Details
 
--Register for Events
+- Register for Events
 
--View Registration Status
+- View Registration Status
 
--Access Digital Ticket
+- Access Digital Ticket
 
--Manage My Registrations
+- Manage My Registrations
 
 2. Committee Flow
 
