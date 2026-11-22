@@ -26,18 +26,18 @@ The E-Hadir storyboard illustrates the proposed website interface, page structur
 
 2. Committee Flow
 
-Login
+- Login
 
-Committee Events
+- Committee Events
 
-Create and Manage Events
+- Create and Manage Events
 
-Manage Student Attendance
+- Manage Student Attendance
 
 3. Admin Flow
 
-Login
+- Login
 
-Admin Events Management
+- Admin Events Management
 
-View Analytics Dashboard
+- View Analytics Dashboard
