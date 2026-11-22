@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Analytics dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/tokens.css">
+        <link rel="stylesheet" href="assets/css/site.css">
+        <link rel="stylesheet" href="assets/css/pages.css">
+    </head>
+    <body><a class="skip" href="#main">Skip to content</a>
+        <header class="header">
+            <div class="container header__inner">
+                <a class="brand" href="admin_events.html" aria-label="E-Hadir — home">
+                    <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-2.8-12-.9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+                    <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+                    <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+                    </svg>
+                    <span class="brand__word">E-Hadir</span>
+                </a>
+                <nav class="nav" id="site-nav" aria-label="Main">
+                    <a href="admin_events.html">Events</a> 
+                    <a href="analytics_dashboard.html" aria-current="page">Analytics</a> 
+                    <a href="login.html">Sign out</a> 
+                    <a class="nav__cta" href="analytics_dashboard.html">View analytics</a>
+                </nav>
+                <div class="header__tools">
+                    <a class="header__search" href="admin_events.html#event-list" aria-label="Search events">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7"/>
+                        <path d="m20 20-3.5-3.5"/>
+                        </svg>
+                        <span>Search</span>
+                    </a>
+                    <a class="btn btn--outline header__cta" href="analytics_dashboard.html">View analytics</a>
+                    <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class='phead'>
+                <div class='container'>
+                    <div class='phead__inner'>
+                        <p class='eyebrow'>ADMINISTRATOR INSIGHTS</p>
+                        <h1>See the shape of <span class='hl'>campus life.</span>
+                        </h1>
+                        <p class='lede'>Review club turnout, monthly engagement and venue utilization.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <!-- ANALYTICS STATISTICS -->
+                    <div class="dashboard-stats" data-reveal>
+                        <div class="dashboard-stat">
+                            <p class="dashboard-stat__value">[existing_metric_1]</p>
+                            <h3 class="dashboard-stat__title">Top 5 club turnout</h3>
+                            <p class="dashboard-stat__desc">Clubs with the highest event attendance.</p>
+                        </div>
+                        <div class="dashboard-stat dashboard-stat--dark">
+                            <p class="dashboard-stat__value">[existing_metric_2]</p>
+                            <h3 class="dashboard-stat__title">Monthly engagement</h3>
+                            <p class="dashboard-stat__desc">Student participation throughout the months.</p>
+                        </div>
+                        <div class="dashboard-stat">
+                            <p class="dashboard-stat__value">[existing_metric_3]</p>
+                            <h3 class="dashboard-stat__title">Venue utilization</h3>
+                            <p class="dashboard-stat__desc">Usage of university event venues.</p>
+                        </div>
+                    </div>
+                    <!-- ANALYTICS TABLES -->
+                    <div class="popular__grid">
+                        <!-- TOP 5 CLUBS -->
+                        <article class="eh-panel" data-reveal>
+                            <h2>Top 5 clubs by turnout</h2>
+                            <div class="eh-table">
+                                <table>
+                                    <tr>
+                                        <th>Club</th>
+                                        <th>Attendance</th>
+                                    </tr>
+                                    <tr>
+                                        <td>[club_name]</td>
+                                        <td>[attendance_count]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[club_name]</td>
+                                        <td>[attendance_count]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[club_name]</td>
+                                        <td>[attendance_count]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[club_name]</td>
+                                        <td>[attendance_count]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>[club_name]</td>
+                                        <td>[attendance_count]</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                        <!-- MONTHLY ENGAGEMENT -->
+                        <article class="eh-panel" data-reveal>
+                            <h2>Monthly engagement rates</h2>
+                            <div class="eh-table">
+                                <table>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Rate</th>
+                                    </tr>
+                                    <tr>
+                                        <td>July</td>
+                                        <td>48%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>August</td>
+                                        <td>62%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>September</td>
+                                        <td>56%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>October</td>
+                                        <td>[engagement_rate]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November</td>
+                                        <td>88%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December</td>
+                                        <td>[utilization_rate]</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- VENUE UTILIZATION -->
+                    <article class="eh-panel" data-reveal>
+                        <h2>Venue utilization</h2>
+                        <div class="eh-table">
+                            <table>
+                                <tr>
+                                    <th>Venue</th>
+                                    <th>Utilization</th>
+                                </tr>
+                                <tr>
+                                    <td>[venue]</td>
+                                    <td>[utilization_rate]</td>
+                                </tr>
+                                <tr>
+                                    <td>[venue]</td>
+                                    <td>[utilization_rate]</td>
+                                </tr>
+                                <tr>
+                                    <td>[venue]</td>
+                                    <td>[utilization_rate]</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </article>
+                    <p class="note">Figures will be calculated from event and attendance records.</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer--compact">
+            <div class="container footer__compact-inner">
+                <p>&copy; E-Hadir</p>
+            </div>
+        </footer>
+        <div class="toast" role="status" aria-live="polite" hidden></div>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
