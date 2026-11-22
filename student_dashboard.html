@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/tokens.css">
+        <link rel="stylesheet" href="assets/css/site.css">
+        <link rel="stylesheet" href="assets/css/pages.css">
+    </head>
+    <body>
+        <a class="skip" href="#main">Skip to content</a>
+        <header class="header">
+            <div class="container header__inner">
+                <a class="brand" href="student_dashboard.html" aria-label="E-Hadir — home">
+                    <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M4 8.5c4-1.9 7.8-1.6 12 .9 4.2-2.5 8-2.8 12-.9v16c-4-1.9-7.8-2.8-12-.9-4.2-2.5-8-2.8-12-.9Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" />
+                    <path d="M16 9.4v16" stroke="currentColor" stroke-width="2.4" />
+                    <circle cx="25" cy="6" r="3.2" fill="var(--sage)" />
+                    </svg>
+                    <span class="brand__word">E-Hadir</span>
+                </a>
+                <nav class="nav" id="site-nav" aria-label="Main">
+                    <a href="student_dashboard.html" aria-current="page">Discover</a> 
+                    <a href="my_registrations.html">My registrations</a> 
+                    <a href="login.html">Sign out</a> 
+                    <a class="nav__cta" href="student_dashboard.html">Browse events</a>
+                </nav>
+                <div class="header__tools">
+                    <a class="header__search" href="student_dashboard.html#events" aria-label="Search events">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                        <span>Search</span>
+                    </a>
+                    <a class="btn btn--outline header__cta" href="student_dashboard.html">Browse events</a>
+                    <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main id="main" class="student-dashboard">
+            <!-- WAITLIST PROMOTION NOTIFICATION -->
+            <section class="promotion-notice" id="promotionNotice" hidden>
+                <div class="promotion-notice__content">
+                    <div class="promotion-notice__icon">✓</div>
+                    <div class="promotion-notice__text">
+                        <p class="eyebrow">REGISTRATION UPDATE</p>
+                        <h2>Good news, [student_name]!</h2>
+                        <p>
+                            Your waitlist position has been promoted.
+                            Your registration for
+                            <strong>[event_title]</strong>
+                            is now confirmed.
+                        </p>
+                    </div>
+                    <a href="my_registrations.html" class="btn btn--ink">
+                        View registration
+                    </a>
+                    <button type="button" class="promotion-notice__close" id="closePromotion" aria-label="Close notification">
+                        &times;
+                    </button>
+                </div>
+            </section>
+            <!-- END NOTIFICATION -->
+            <section class="student-hero">
+                <div class="container student-hero__grid">
+                    <div class="student-hero__copy" data-reveal>
+                        <p class="eyebrow">YOUR CAMPUS, YOUR EXPERIENCE</p>
+                        <p class="student-hello">Welcome back, <strong>[student_name]</strong></p>
+                        <h1>Make room for<br>something <span class="hl">remarkable.</span></h1>
+                        <p class="student-hero__lede">Find workshops, talks and campus activities that match your interests. Explore the details, choose what matters to you and keep your registrations in one place.</p>
+                        <div class="student-hero__actions">
+                            <a class="btn btn--ink" href="#upcoming-events">Explore upcoming events <span aria-hidden="true">↗</span></a>
+                            <span class="student-hero__note">Discover <i>·</i> Register <i>·</i> Attend</span>
+                        </div>
+                    </div>
+                    <div class="student-hero__visual" data-reveal aria-label="E-Hadir campus event overview">
+                        <div class="student-visual__top"><span>E-HADIR / STUDENT SPACE</span><span>01 — 03</span></div>
+                        <div class="student-visual__orbit student-visual__orbit--one"></div>
+                        <div class="student-visual__orbit student-visual__orbit--two"></div>
+                        <div class="student-visual__monogram">E<span>.</span></div>
+                        <div class="student-visual__caption">
+                            <span class="student-visual__caption-label">MAKE IT COUNT</span>
+                            <strong>Your next campus<br>moment starts here.</strong>
+                        </div>
+                        <div class="student-visual__sticker">BE<br>THERE<span>✳</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="student-overview" aria-label="Student activity overview">
+                <div class="container">
+                    <div class="student-overview__head">
+                        <div><p class="eyebrow">YOUR ACTIVITY</p>
+                            <h2>A quick look at your E-Hadir space.</h2>
+                        </div>
+                        <a class="student-text-link" href="my_registrations.html">View my registrations 
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                    <div class="student-metrics">
+                        <article class="student-metric">
+                            <span class="student-metric__number">[registered_event_count]</span>
+                            <span class="student-metric__label">Registered events</span>
+                            <span class="student-metric__detail">Events you've signed up for</span>
+                        </article>
+                        <article class="student-metric student-metric--dark">
+                            <span class="student-metric__number">[upcoming_event_count]</span>
+                            <span class="student-metric__label">Upcoming events</span>
+                            <span class="student-metric__detail">Opportunities happening soon</span>
+                        </article>
+                        <article class="student-metric">
+                            <span class="student-metric__number">[waitlist_count]</span>
+                            <span class="student-metric__label">Waitlist entries</span>
+                            <span class="student-metric__detail">Registrations awaiting a place</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="student-discover section" id="upcoming-events">
+                <div class="container">
+                    <div class="student-section-heading">
+                        <div>
+                            <p class="eyebrow">FIND YOUR NEXT EXPERIENCE</p>
+                            <h2>What's happening<br>around campus?</h2>
+                        </div>
+                        <p>Take a look at the latest events. Open an event to read its information before creating your registration.</p>
+                    </div>
+                    <div class="student-category-row" aria-label="Event categories">
+                        <span class="student-category-row__label">EXPLORE INTERESTS</span>
+                        <span>Workshops</span>
+                        <span>Talks</span>
+                        <span>Technology</span>
+                        <span>Career</span>
+                    </div>
+                    <div class="student-event-grid">
+                        <article class="student-event-card student-event-card--feature" data-reveal>
+                            <div class="student-event-art student-event-art--one">
+                                <span class="student-event-art__index">01 / EVENT</span>
+                                <span class="student-event-art__word">GROW<span>.</span></span>
+                                <span class="student-event-art__category">[event_category]</span>
+                            </div>
+                            <div class="student-event-content">
+                                <div class="student-event-meta">
+                                    <span>[event_date]</span>
+                                    <span>[event_time]</span>
+                                </div>
+                                <h3>[event_title]</h3>
+                                <p>[event_description]</p>
+                                <div class="student-event-details">
+                                    <span>[venue]</span>
+                                    <span>[available_tickets] places left</span>
+                                </div>
+                                <a class="student-event-link" href="event_details.html?event=[event_id]">Read event details 
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="student-event-card" data-reveal>
+                            <div class="student-event-art student-event-art--two">
+                                <span class="student-event-art__index">02 / EVENT</span>
+                                <span class="student-event-art__word">MAKE<span>.</span></span>
+                                <span class="student-event-art__category">[event_category]</span>
+                            </div>
+                            <div class="student-event-content">
+                                <div class="student-event-meta">
+                                    <span>[event_date]</span>
+                                    <span>[event_time]</span>
+                                </div>
+                                <h3>[event_title]</h3>
+                                <p>[event_description]</p>
+                                <div class="student-event-details">
+                                    <span>[venue]</span>
+                                    <span>[available_tickets] places left</span>
+                                </div>
+                                <a class="student-event-link" href="event_details.html?event=[event_id]">Read event details 
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="student-event-card" data-reveal>
+                            <div class="student-event-art student-event-art--three">
+                                <span class="student-event-art__index">03 / EVENT</span>
+                                <span class="student-event-art__word">CONNECT<span>.</span></span>
+                                <span class="student-event-art__category">[event_category]</span>
+                            </div>
+                            <div class="student-event-content">
+                                <div class="student-event-meta">
+                                    <span>[event_date]</span>
+                                    <span>[event_time]</span>
+                                </div>
+                                <h3>[event_title]</h3>
+                                <p>[event_description]</p>
+                                <div class="student-event-details">
+                                    <span>[venue]</span>
+                                    <span>[available_tickets] places left</span>
+                                </div>
+                                <a class="student-event-link" href="event_details.html?event=[event_id]">Read event details 
+                                    <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="student-events-footnote">Event information and availability are displayed from the E-Hadir event records.</p>
+                </div>
+            </section>
+            <section class="student-steps-section">
+                <div class="container student-steps-layout">
+                    <div>
+                        <p class="eyebrow">HOW E-HADIR WORKS</p>
+                        <h2>Three simple steps.<br>One fuller campus life.</h2>
+                    </div>
+                    <div class="student-steps">
+                        <article>
+                            <span>01</span>
+                            <div>
+                                <h3>Discover</h3>
+                                <p>Browse the events available to students.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span>02</span>
+                            <div>
+                                <h3>Read the details</h3>
+                                <p>Check the date, venue, description and availability.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span>03</span>
+                            <div>
+                                <h3>Register</h3>
+                                <p>Submit your registration and check its status in your account.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer--compact">
+            <div class="container footer__compact-inner">
+                <p>&copy; E-Hadir</p>
+            </div>
+        </footer>
+        <div class="toast" role="status" aria-live="polite" hidden></div>
+        <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () 
+            {
+                const promotionNotice = document.getElementById("promotionNotice");
+                const closePromotion = document.getElementById("closePromotion");
+                const urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.get("promoted") === "true") 
+                {
+                    promotionNotice.hidden = false;
+                }
+                closePromotion.addEventListener("click", function () {promotionNotice.hidden = true;});
+            });
+        </script>
+    </body>
+</html>
